@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /content
+  port: 63040
+#微服务配置
+spring:
+  application:
+    name: content-service
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/xuechengplus?serverTimezone=UTC&userUnicode=true&useSSL=false&
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# 日志文件配置路径
+logging:
+  config: classpath:log4j2-dev.xml
+
+
